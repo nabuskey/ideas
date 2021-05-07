@@ -1,0 +1,64 @@
+name: example-app-config
+application: example-app
+serviceAccount: service-account
+artifacts:
+- name: gitRepo1
+  namespace: sourceRepos 
+  chartName: crossplane
+  url: github.com/nabuskey/helm
+  type: git
+  reference: my-helm-artifact
+  tagVersionStrategy: increasing-tag
+environments:
+- name: dev
+  locations:
+    account: deploy-keel-dev
+  resources:
+  - kind: k8s/helm@v1
+    spec:
+      metadata:
+        application: spinmd
+      template:
+        metadata:
+          name: crossplane 
+          namespace: flux-system
+        spec:
+          chartReference: my-helm-artifact
+          values:
+            service: crossplane
+            resources:
+              requests:
+                cpu: 100m
+                memory: 64Mi
+
+# Actual manifest submitted for the above spec:
+piVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: gitRepo1
+  namespace: sourceRepos
+spec:
+  interval: 1m
+  url: https://github.com/nabuskey/helm
+  ref:
+    tag: <DERIVED>
+---
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: backend
+  namespace: default
+spec:
+  chart:
+    spec:
+      chart: crossplane
+      sourceRef:
+        kind: GitRepository
+        name: gitRepo1
+        namespace: sourceRepos
+  values:
+    service: crossplane
+    resources:
+      requests:
+        cpu: 100m
+        memory: 64Mi
