@@ -3,7 +3,7 @@ application: example-app
 serviceAccount: service-account
 artifacts:
 - name: gitRepo1
-  namespace: sourceRepos 
+  namespace: sourceRepos # Omit if it can be derived. Not sure if technically possible
   chartName: crossplane
   url: github.com/nabuskey/helm
   type: git
