@@ -49,7 +49,7 @@ metadata:
   name: crossplane
   namespace: flux-system
   annotations:
-    spinnaker.io/managed-by: example-app
+    kee.spinnaker.io/managed-by: example-app
 spec:
   chart:
     spec:
