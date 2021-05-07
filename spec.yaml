@@ -4,6 +4,7 @@ serviceAccount: service-account
 artifacts:
 - name: gitRepo1
   namespace: sourceRepos # Omit if it can be derived. Not sure if technically possible
+  account: git-repo-account # Corresponds to gitRepo account in clouddriver
   chartName: crossplane
   url: github.com/nabuskey/helm
   type: git
