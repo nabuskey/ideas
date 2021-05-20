@@ -1,0 +1,17 @@
+[
+  {
+    "id": "aws.ManagedDeliveryK8sPlugin",
+    "description": "An example of a PF4J-based plugin that provides a custom pipeline stage.",
+    "provider": "https://github.com/spinnaker-plugin-examples",
+    "releases": [
+      {
+        "version": "0.0.1",
+        "date": "2020-11-03T16:20:59.469168Z",
+        "requires": "orca>=0.0.0,deck>=0.0.0",
+        "sha512sum": "ea8967dcf4460aa286d18008908e0d04ac98b921880c177727c11175e9f6a35d26837aee4760975c19bee769aa075df262c5385ced0d95c17e4197df208d2558",
+        "state": "",
+        "url": "https://github.com/nabuskey/ideas/raw/main/plugin.zip"
+      }
+    ]
+  }
+]
