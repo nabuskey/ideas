@@ -24,7 +24,7 @@
         "version": "0.0.3",
         "date": "2020-11-03T16:20:59.469168Z",
         "requires": "keel>=0.0.0",
-        "sha512sum": "df9f95e175b1d4098e1a4c1e143e4ff491a8f44c9b94621203b29e80cd087f768a3c3fbb7a09eb21f30c379839b07ffe115917d968145ad387d14edd43faa678",
+        "sha512sum": "b8360b98ddb8133aa024f7f9b320b39a45e6ab1841859bf0122b924dd17365fb8a1366fceedcbd85038dc5639414a7e79bb3aa15fea1df323f80ce7ff6a91c5d",
         "state": "",
         "url": "https://github.com/nabuskey/ideas/raw/main/plugin-0.0.3.zip"
       }
