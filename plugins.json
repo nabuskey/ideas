@@ -7,7 +7,7 @@
       {
         "version": "0.0.1",
         "date": "2020-11-03T16:20:59.469168Z",
-        "requires": "orca>=0.0.0",
+        "requires": "keel>=0.0.0",
         "sha512sum": "27e0adf7e59c0039d9d665eb316ccb03fceb6ccf8cee7f667de9b82039c19a16d7ae4cfc1c80052b8b5fe89b593a71989fba3e3dc554e23d058b8ec4715db07d",
         "state": "",
         "url": "https://github.com/nabuskey/ideas/raw/main/plugin.zip"
