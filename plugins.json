@@ -19,6 +19,14 @@
         "sha512sum": "99ad3dd1afafdb8ffe6d7acf08094bd7ea018c5955871d397aa2fae24f62064c9e3a568348565e52fa22d15eb9433eaeb396df975726435df59a8166cca2ed88",
         "state": "",
         "url": "https://github.com/nabuskey/ideas/raw/main/plugin-0.0.1.zip"
+      },
+      {
+        "version": "0.0.3",
+        "date": "2020-11-03T16:20:59.469168Z",
+        "requires": "keel>=0.0.0",
+        "sha512sum": "df9f95e175b1d4098e1a4c1e143e4ff491a8f44c9b94621203b29e80cd087f768a3c3fbb7a09eb21f30c379839b07ffe115917d968145ad387d14edd43faa678",
+        "state": "",
+        "url": "https://github.com/nabuskey/ideas/raw/main/plugin-0.0.3.zip"
       }
     ]
   }
